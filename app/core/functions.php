@@ -146,7 +146,7 @@ function load_plugins($plugin_folders)
 						$json->index = $json->index ?? 1;
 						$json->index_file = $file;
 						$json->path = 'plugins/' . $folder . '/';
-						$json->http_path = ROOT . '/' . $json->path;
+						$json->http_path = APP_NAME . '/' . $json->path;
 
 						$APP['plugins'][] = $json;
 
@@ -280,7 +280,7 @@ function page()
 
 function redirect($url)
 {
-	header("Location: ". ROOT .'/'. $url);
+	header("Location: ". APP_NAME .'/'. $url);
 	die;
 }
 
@@ -296,7 +296,7 @@ function plugin_http_path(string $path = '')
 	$called_from = debug_backtrace();
 	$key = array_search(__FUNCTION__, array_column($called_from, 'function'));
 	
-	return ROOT . DIRECTORY_SEPARATOR . get_plugin_dir(debug_backtrace()[$key]['file']) . $path;
+	return APP_NAME . DIRECTORY_SEPARATOR . get_plugin_dir(debug_backtrace()[$key]['file']) . $path;
 }
 
 function get_plugin_dir(string $filepath):string
@@ -449,18 +449,18 @@ function csrf_verify(array $post, string $sesKey = 'csrf'):mixed
 function get_image(string $path = '', string $type = 'post')
 {
 	if(file_exists($path))
-		return ROOT . '/' . $path;
+		return APP_NAME . '/' . $path;
 	
 	if($type == 'post')
-		return ROOT . '/assets/images/no_image.jpg';
+		return APP_NAME . '/assets/images/no_image.jpg';
 
 	if($type == 'male')
-		return ROOT . '/assets/images/user_male.jpg';
+		return APP_NAME . '/assets/images/user_male.jpg';
 
 	if($type == 'female')
-		return ROOT . '/assets/images/user_female.jpg';
+		return APP_NAME . '/assets/images/user_female.jpg';
 
-	return ROOT . '/assets/images/no_image.jpg';
+	return APP_NAME . '/assets/images/no_image.jpg';
 }
 
 function esc(?string $str):?string

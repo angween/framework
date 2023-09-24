@@ -2,7 +2,7 @@
 
 namespace Core;
 
-defined('ROOT') or die("Direct script access denied");
+defined('APP_NAME') or die("Direct script access denied");
 
 /**
  * Session class

@@ -2,7 +2,7 @@
 
 namespace Core;
 
-defined('ROOT') or die("Direct script access denied");
+defined('APP_NAME') or die("Direct script access denied");
 
 /**
  * Pager class
@@ -31,7 +31,7 @@ class Pager
 
 		$url = $_GET['url'] ?? 'home';
 		$query_string = str_replace("url=","",$_SERVER['QUERY_STRING']);
-		$current_link = ROOT . '/'.$url . '?' . trim(str_replace($url, "", $query_string),'&');
+		$current_link = APP_NAME . '/'.$url . '?' . trim(str_replace($url, "", $query_string),'&');
 		if(!strstr($current_link, "page="))
 			$current_link .= '&page='.$page_number;
 

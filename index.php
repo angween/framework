@@ -7,9 +7,6 @@ if(phpversion() < $minPHPVersion)
 	die("You need a minimum of PHP version $minPHPVersion to run this app");
 
 
-define('DS', DIRECTORY_SEPARATOR);
-define('ROOTPATH', __DIR__.DS);
-
 require 'config.php';
 require 'app'.DS.'core'.DS.'init.php';
 

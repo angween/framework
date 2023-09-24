@@ -3,7 +3,7 @@
 namespace Model;
 use \Core\Database;
 
-defined('ROOT') or die("Direct script access denied");
+defined('APP_NAME') or die("Direct script access denied");
 
 /**
  * Model class

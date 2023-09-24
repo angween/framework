@@ -22,7 +22,7 @@ if((empty($_SERVER['SERVER_NAME']) && strpos(PHP_SAPI, 'cgi') !== 0) || (!empty(
     /** Database driver */
     define( 'DB_DRIVER', 'mysql' );
 
-    define('ROOT', 'http://localhost/pluginphp');
+    define('APP_NAME', 'http://localhost/pluginphp');
 
 }else
 {
@@ -41,7 +41,7 @@ if((empty($_SERVER['SERVER_NAME']) && strpos(PHP_SAPI, 'cgi') !== 0) || (!empty(
     /** Database driver */
     define( 'DB_DRIVER', 'mysql' );
 	
-	define('ROOT', 'http://yourwebsite.com');
+	define('APP_NAME', 'http://yourwebsite.com');
 }
 
 
