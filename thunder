@@ -9,7 +9,8 @@ ini_set('display_errors', 1);
 if(strpos(PHP_SAPI, 'cgi') === 0)
 	die("This tool can only be run in the command line");
 
-define('FCPATH', __DIR__.DIRECTORY_SEPARATOR);
+define('DS', DIRECTORY_SEPARATOR);
+define('FCPATH', __DIR__.DS);
 chdir(FCPATH);
 
 require FCPATH . "app/thunder/init.php";

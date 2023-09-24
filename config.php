@@ -9,7 +9,7 @@ if(
     }
 } else {
     if ( ! $webINI = parse_ini_file("env_prod.ini", true) ) {
-        die('File ENV tidak ditemukan!');
+        die('File ENV tidak ditemukan!!');
     }
 }
 
