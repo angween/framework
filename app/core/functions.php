@@ -5,7 +5,11 @@ function set_value(string|array $key, mixed $value = ''):bool
 	global $USER_DATA;
 
 	$called_from = debug_backtrace();
+
 	$ikey = array_search(__FUNCTION__, array_column($called_from, 'function'));
+	print_r($called_from);
+	print_r($ikey);
+	exit;
 	$path = get_plugin_dir(debug_backtrace()[$ikey]['file']) . 'config.json';
 
 	if(file_exists($path))
@@ -75,8 +79,6 @@ function APP($key = '')
 
 		return $APP;
 	}
-
-	return null;
 }
 
 function show_plugins()
@@ -146,7 +148,7 @@ function load_plugins($plugin_folders)
 						$json->index = $json->index ?? 1;
 						$json->index_file = $file;
 						$json->path = 'plugins/' . $folder . '/';
-						$json->http_path = APP_NAME . '/' . $json->path;
+						$json->http_path = PATH_URI . '/' . $json->path;
 
 						$APP['plugins'][] = $json;
 
@@ -280,7 +282,7 @@ function page()
 
 function redirect($url)
 {
-	header("Location: ". APP_NAME .'/'. $url);
+	header("Location: ". PATH_URI .'/'. $url);
 	die;
 }
 
@@ -296,7 +298,7 @@ function plugin_http_path(string $path = '')
 	$called_from = debug_backtrace();
 	$key = array_search(__FUNCTION__, array_column($called_from, 'function'));
 	
-	return APP_NAME . DIRECTORY_SEPARATOR . get_plugin_dir(debug_backtrace()[$key]['file']) . $path;
+	return PATH_URI . DS . get_plugin_dir(debug_backtrace()[$key]['file']) . $path;
 }
 
 function get_plugin_dir(string $filepath):string
@@ -307,11 +309,11 @@ function get_plugin_dir(string $filepath):string
 	$basename = basename($filepath);
 	$path = str_replace($basename, "", $filepath);
 
-	if(strstr($path, DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR))
+	if(strstr($path, DS.'plugins'.DS))
 	{
-		$parts = explode(DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR, $path);
-		$parts = explode(DIRECTORY_SEPARATOR, $parts[1]);
-		$path = 'plugins' . DIRECTORY_SEPARATOR . $parts[0].DIRECTORY_SEPARATOR;
+		$parts = explode(DS.'plugins'.DS, $path);
+		$parts = explode(DS, $parts[1]);
+		$path = 'plugins' . DS . $parts[0].DS;
 
 	}
 
@@ -449,18 +451,18 @@ function csrf_verify(array $post, string $sesKey = 'csrf'):mixed
 function get_image(string $path = '', string $type = 'post')
 {
 	if(file_exists($path))
-		return APP_NAME . '/' . $path;
+		return PATH_URI . '/' . $path;
 	
 	if($type == 'post')
-		return APP_NAME . '/assets/images/no_image.jpg';
+		return PATH_URI . '/assets/images/no_image.jpg';
 
 	if($type == 'male')
-		return APP_NAME . '/assets/images/user_male.jpg';
+		return PATH_URI . '/assets/images/user_male.jpg';
 
 	if($type == 'female')
-		return APP_NAME . '/assets/images/user_female.jpg';
+		return PATH_URI . '/assets/images/user_female.jpg';
 
-	return APP_NAME . '/assets/images/no_image.jpg';
+	return PATH_URI . '/assets/images/no_image.jpg';
 }
 
 function esc(?string $str):?string

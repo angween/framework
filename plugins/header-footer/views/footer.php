@@ -5,6 +5,6 @@
 		<div>Copyright <?=date("Y")?></div>
 	</center>
 </div>
-	<script src="<?=APP_NAME?>/assets/js/bootstrap.min.js"></script>
+	<script src="<?=PATH_URI?>/assets/js/bootstrap.min.js"></script>
 </body>
 </html>

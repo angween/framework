@@ -39,7 +39,7 @@ class Model extends Database
 		}
 
 		$query = trim($query,' && ');
-		$query .= " order by $this->order_column $this->order limit $limit offset $offset";
+		$query .= " order by $this->order_column $this->order limit $this->limit offset $this->offset";
 
 		$data = array_merge($where_array,$where_not_array);
 
@@ -60,7 +60,7 @@ class Model extends Database
 	public function getAll(string $data_type = 'object'):array|bool
 	{
 
-		$query = "select * from $this->table order by $this->order_column $this->order limit $limit offset $offset";
+		$query = "select * from $this->table order by $this->order_column $this->order limit $this->limit offset $this->offset";
 		return $this->query($query,[],$data_type);
 	}
 
