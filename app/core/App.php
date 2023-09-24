@@ -9,7 +9,6 @@ class App
 {
 	public function index()
 	{
- 
 		do_action('before_controller');
 		do_action('controller');
 		do_action('after_controller');
@@ -19,6 +18,7 @@ class App
 
 		$before_content = ob_get_contents();
 		do_action('view');
+		echo "AAAAAA";exit;
 		$after_content = ob_get_contents();
 
 		if(strlen($after_content) == strlen($before_content))
