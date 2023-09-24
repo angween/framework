@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?=plugin_http_path('assets/css/style.css')?>">
+<link rel="stylesheet" type="text/css" href="<?= plugin_http_path('assets/css/style.css')?>">
 
 <div class="col-md-10 mx-auto p-4">
 	<center>

@@ -21,21 +21,21 @@ define('DS', DIRECTORY_SEPARATOR);
 define('PATH_URI', $__root . $__script_name);                  /** http://localhost/mvc/ */
 define('PATH_FILE', __DIR__ . DS );                            /** C:\xampp\htdocs\mvc\ */
 
-define('DEBUG', $webINI['app']['DEBUG']);
+define('DEBUG',           $webINI['app']['DEBUG']);
 
-define('APP_NAME',           $webINI['app']['NAME']);
-define('APP_EMAIL',          $webINI['app']['EMAIL']);
-define('APP_DESC ',          $webINI['app']['EMAIL']);
-define('KEYWORDS',       $webINI['app']['KEYWORDS']);
-define('HASH_COST',      $webINI['app']['HASH_COST']);
+define('APP_NAME',        $webINI['app']['NAME']);
+define('APP_EMAIL',       $webINI['app']['EMAIL']);
+define('APP_DESC ',       $webINI['app']['EMAIL']);
+define('KEYWORDS',        $webINI['app']['KEYWORDS']);
+define('HASH_COST',       $webINI['app']['HASH_COST']);
 
 define('COMPANY_NAME',    $webINI['company']['NAME']);
 define('COMPANY_ADDRESS', $webINI['company']['ADDRESS']);
 define('COMPANY_PHONE',   $webINI['company']['PHONE']);
 
-define('PROGRAM_PATH', $webINI['company']['PROGRAM_PATH']);
-define('DB_HOSTNAME', $webINI['database']['HOSTNAME']);
-define('DB_USERNAME', $webINI['database']['USERNAME']);
-define('DB_PASSWORD', $webINI['database']['PASSWORD']);
-define('DB_DATABASE', $webINI['database']['DATABASE']);
-define('DB_PORT',     $webINI['database']['PORT']);
+define('PROGRAM_PATH',    $webINI['company']['PROGRAM_PATH']);
+define('DB_HOSTNAME',     $webINI['database']['HOSTNAME']);
+define('DB_USERNAME',     $webINI['database']['USERNAME']);
+define('DB_PASSWORD',     $webINI['database']['PASSWORD']);
+define('DB_DATABASE',     $webINI['database']['DATABASE']);
+define('DB_PORT',         $webINI['database']['PORT']);

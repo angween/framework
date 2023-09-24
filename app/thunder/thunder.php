@@ -95,7 +95,7 @@ class Thunder
 			}
 
 			/*css file*/
-			$css_file = $folder . '/assets/css/style.css';
+			$css_file = $folder . '/assets/css/xstyle.css';
 			$css_file_source = 'app/thunder/samples/css-sample.css';
 			
 			if(file_exists($css_file_source)){
