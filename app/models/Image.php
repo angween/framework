@@ -36,7 +36,6 @@ class Image
 			
 			default:
 				return $filename;
-				break;
 		}
 
 		if($type == 'image/jpeg')
@@ -120,7 +119,6 @@ class Image
 			
 			default:
 				return $filename;
-				break;
 		}
 
 		imagedestroy($dst_image);
@@ -157,7 +155,6 @@ class Image
 			
 			default:
 				return $filename;
-				break;
 		}
 
 		$src_w = imagesx($image);
@@ -228,7 +225,6 @@ class Image
 			
 			default:
 				return $filename;
-				break;
 		}
 
 		imagedestroy($dst_image);
