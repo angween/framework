@@ -1,9 +1,8 @@
 <?php
-
-if(
+if (
     (empty($_SERVER['SERVER_NAME']) && strpos(PHP_SAPI, 'cgi') !== 0) || 
     (!empty($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'localhost')
-){
+) {
     if ( ! $webINI = parse_ini_file("env_dev.ini", true) ) {
         die('File ENV tidak ditemukan!');
     }
