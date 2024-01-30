@@ -1,10 +1,10 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use RLAtech\controller\App;
-use RLAtech\model\Riwayat as Model;
+use core\controller\App;
+use core\model\Riwayat as Model;
 
 /**
  * Contoh isi $riwayat dalam SQL:

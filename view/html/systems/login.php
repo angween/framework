@@ -32,7 +32,7 @@ badan {
 				<div class="authentication-inner border-0 border-secondary rounded">
 					<!-- Register -->
 					<div class="card bg-transparent border-0">
-						<img class="app-brand-logo img-fluid" style="max-width: 100%; height: auto;" src="view/images/ahlan_wasahlan.svg" />
+						<img class="app-brand-logo img-fluid" style="max-width: 100%; height: auto;" src="app/core/view/images/ahlan_wasahlan.svg" />
 
 						<div class="card-body">
 							<h6 class="mb-3 text-center text-secondary">

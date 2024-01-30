@@ -1,7 +1,7 @@
 <?php
-require("app/RLAtech/config.php");
+require("app/core/config.php");
 
-use RLAtech\controller\App;
+use core\controller\App;
 
 //  echo "<!--";
 //  print_r($_SESSION);

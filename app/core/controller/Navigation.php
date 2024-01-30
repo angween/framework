@@ -1,10 +1,10 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use RLAtech\controller\App;
-use RLAtech\model\Navigation as Model;
+use core\controller\App;
+use core\model\Navigation as Model;
 
 class Navigation {
 	public Model $model;

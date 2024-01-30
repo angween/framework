@@ -1,5 +1,5 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 

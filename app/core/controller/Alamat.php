@@ -1,9 +1,9 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use \RLAtech\controller\{
+use \core\controller\{
 	App,
 	Datagrid
 };
@@ -18,7 +18,7 @@ class Alamat
 
 	public function __construct()
 	{
-		$_model = "RLAtech\model\Alamat";
+		$_model = "core\model\Alamat";
 
 		$this->model = new $_model;
 	}

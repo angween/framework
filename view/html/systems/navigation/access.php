@@ -1,7 +1,7 @@
 <?php
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use RLAtech\controller as RLA;
+use core\controller as RLA;
 ?>
 
 <?php if ( RLA\App::$loggedInUser->help ) { ?>

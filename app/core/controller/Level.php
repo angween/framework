@@ -1,10 +1,10 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use RLAtech\controller\App;
-use RLAtech\model\Level as Model;
+use core\controller\App;
+use core\model\Level as Model;
 
 class Level {
 	public Model $model;

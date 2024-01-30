@@ -1,11 +1,11 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use RLAtech\controller\App;
+use core\controller\App;
 
-use RLAtech\model\Cari as Model;
+use core\model\Cari as Model;
 
 class Cari 
 {
@@ -54,7 +54,7 @@ class Cari
 			);
 		}
 
-		$controllerName = "RLAtech\\controller\\" . $this->searchController;
+		$controllerName = "core\\controller\\" . $this->searchController;
 
 		$controllerAddon = "addons\\controller\\" . $controllerName;
 

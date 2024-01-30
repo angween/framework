@@ -1,6 +1,6 @@
 <?php
-namespace RLAtech\model;
-use RLAtech\controller\DB;
+namespace core\model;
+use core\controller\DB;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 

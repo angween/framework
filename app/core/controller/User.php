@@ -1,11 +1,11 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use RLAtech\model\User as Model;
+use core\model\User as Model;
 
-use RLAtech\controller\DB as DB;
+use core\controller\DB as DB;
 
 class User 
 {

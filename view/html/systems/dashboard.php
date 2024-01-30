@@ -1,6 +1,6 @@
 <?php
 defined('APP_OWNER') or exit('No direct script access allowed');
-use \RLAtech\controller\App;
+use \core\controller\App;
 
 $uniqID = uniqid();
 $tipeMember = 'view';

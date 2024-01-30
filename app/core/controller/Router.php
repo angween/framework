@@ -1,7 +1,7 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
-use RLAtech\controller as RLA;
+use core\controller as RLA;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 

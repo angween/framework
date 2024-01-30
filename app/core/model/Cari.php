@@ -1,10 +1,10 @@
 <?php
-namespace RLAtech\model;
+namespace core\model;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
 
-use RLAtech\controller\App;
-use RLAtech\controller\DB as DB;
+use core\controller\App;
+use core\controller\DB as DB;
 
 class Cari
 {

@@ -1,9 +1,9 @@
 <?php
-namespace RLAtech\controller;
+namespace core\controller;
 
-//use RLAtech\model\User as Model;
+//use core\model\User as Model;
 
-use RLAtech\model\User as Model;
+use core\model\User as Model;
 use SPG\controller\LoginMember;
 
 defined('APP_OWNER') or exit('No direct script access allowed');
