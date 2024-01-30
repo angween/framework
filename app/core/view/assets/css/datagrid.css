@@ -1,0 +1,677 @@
+:root {
+	--border-color: #ddd;
+}
+
+.nav-link {
+	padding: 0.5rem 1.5rem;
+}
+
+/* .accordion {
+	background: unset;
+	border-color: unset;
+	overflow: unset;
+	border-width: unset;
+	border-style: unset;
+} */
+
+.menu-top.menu {
+	display: block;
+}
+
+.accordion {
+	background: unset;
+	border-color: unset;
+}
+
+.accordion {
+	border-width: unset;
+	border-style: unset;
+}
+
+
+.form-control.flatpickr-input[readonly] {
+	background-color: white;
+}
+
+
+span.tagbox.textbox {
+	border-radius: 6px !important;
+	padding-left: 7px;
+	padding: 0.875rem;
+}
+
+
+.accordion .accordion-item .accordion-collapse {
+	background: none;
+}
+
+/* Menu Aside */
+#layout-menu.menu {
+	background-color: unset;
+    border-color: unset;
+    color: unset;
+    margin: unset;
+    padding: unset;
+    border-width: unset;
+    border-style: unset;
+    overflow: unset;
+}
+
+#layout-menu.menu-vertical .menu-icon {
+	width: 1.5rem;
+	position: unset;
+	height: unset;
+	left: unset;
+	top: unset;
+	margin-top: unset;
+}
+
+#layout-menu .menu-item {
+	position: unset;
+	margin: unset;
+    padding: unset;
+    overflow: unset;
+    white-space: unset;
+    cursor: unset;
+    border-width: unset;
+    border-style: unset;
+}
+
+#layout-menu .menu-text {
+	font-size: unset;
+    height: unset;
+    line-height: unset;
+    float: unset;
+    padding-left: unset;
+}
+
+/* Tab Utama isi halaman */
+#targetIsi .tabs-header {
+	background: unset;
+	position: relative;
+	padding: unset;
+	padding-top: unset;
+	overflow: unset;
+}
+
+#targetIsi .tabs-header, 
+#targetIsi .tabs-scroller-left, 
+#targetIsi .tabs-scroller-right {
+	border-color:unset;
+}
+
+#targetIsi .tabs {
+	border: 0;
+	z-index: 1;
+	position: relative;
+	padding: 0;
+	padding-left: 0;
+}
+#targetIsi .tabs li {
+	outline: none !important;
+	margin:0;
+}
+#targetIsi .tabs li span.tabs-title { 
+	padding: 0.5rem 2.25rem 0.5rem 1rem;
+}
+/* #targetIsi .tabs li:first-child span.tabs-title { 
+	border-top-left-radius: 0.375rem;
+} */
+#targetIsi .tabs li .tabs-inner {
+	border-width: 0 0 1px 0;
+}
+#targetIsi .tabs li .tabs-inner {
+	background-color: var(--bs-body-bg);
+	border-bottom-color: #eceef1;
+}
+#targetIsi .tabs li:first-child .tabs-inner {
+	border-top-left-radius: 0.375rem;
+}
+#targetIsi .tabs li:not(:first-child) .tabs-inner {
+	/* border-left: 1px solid #fff; */
+}
+#targetIsi .tabs li:last-child .tabs-inner {
+	border-top-right-radius: 0.375rem;
+}
+#targetIsi .tabs li.tabs-selected .tabs-inner {
+	background-color: #fff;
+	border-bottom-color: #fff;
+}
+#targetIsi .tabs-panels {
+	box-shadow: 0px 6px 7px -1px rgb(67 89 113 / 12%);
+	border-top-right-radius: 0.375rem;
+	border-radius: 0 0 0.375rem 0.375rem;
+	background-color: #fff;
+	/* padding: 1.5rem; */
+}
+#targetIsi .tabs-panels .panel {
+	border:0;
+	z-index: 1;
+}
+
+#targetIsi .textbox .textbox-prompt {
+	/* border-radius: 0.375rem; */
+}
+
+#targetIsi .textbox-focused {
+	border-color: var(--color-primary);
+}
+
+#targetIsi .div.panel.combo-p {
+	border: 1px solid var(--border-color)
+}
+
+/*
+.tab-content .accordion {
+	background: unset;
+    border-color: unset;
+    overflow: unset;
+    border-width: unset;
+    border-style: unset;
+}
+*/
+
+.tab-content .accordion-collapse {
+	background: unset
+}
+.tab-content .accordion .accordion-body {
+	border-width: unset;
+}
+
+.tooltip{
+	border-radius: 2px;
+}
+.panel-body {
+    font-size: inherit;
+}
+
+.bungkus { min-width: 1022px;}
+
+.bungkus .datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber {
+    font-size: .8rem;
+}
+
+.bungkus .datagrid-row-alt {
+    background: #eeeeee;
+}
+
+.bungkus .datagrid-header, .datagrid-toolbar, .datagrid-pager, .datagrid-footer-inner {
+    border-color: var(--bs-gray);
+}
+
+.calendar-title span,
+.calendar table td, .calendar table th {
+    font-size: var(--bs-body-font-size);
+}
+
+.bungkus tr.datagrid-row td.datagrid-row-over.datagrid-row-selected {
+  color: var(--bs-dark);
+  /* background: var(--bs-white); */
+}
+
+.bungkus .datagrid-row.datagrid-row-over {
+  color: var(--bs-dark);
+  background: rgba((--bs-body-bg-rgb), .4);
+  cursor:default
+}
+/*
+.bungkus .datagrid-row-selected.datagrid-row-over {
+  color: var(--bs-dark);
+  background: var(--bs-success);
+}
+*/
+/* .bungkuns .datagrid-header td.datagrid-header-over, */
+
+.bungkus .datagrid-header-row .datagrid-filter-row td {
+  padding-bottom: 5px !important;
+}
+
+.bungkus .datagrid-row-over a {
+    color: var(--bs-primary);
+}
+.bungkus .datagrid-row-selected {
+    background-color: rgba( var(--bs-primary-rgb), 0.25) !important;
+    /* color:#000000; */
+}
+.bungkus .datagrid-row-selected a {
+    color: var(--bs-primary);
+}
+.bungkus .datagrid-cell, .datagrid-cell-group, .datagrid-header-rownumber, .datagrid-cell-rownumber {
+    height:40px;
+    line-height: 1.4rem;
+	padding: .5rem;
+	/* padding-top: .5rem;
+	padding-bottom: .5rem; */
+}
+
+.bungkus .panel-body {
+	border-width: 0;
+	border-style: solid;
+}
+
+#targetIsi .tab-content {
+	padding: 0;
+}
+
+.datagrid-cell-group {
+	text-align: unset;
+}
+.bungkus h5 {
+	margin: 15px 8px 5px;
+}
+.bungkus .panel-header {
+	background-color: white;
+	background: none;
+    border: 0px;
+    padding: 2px 8px;
+}
+.bungkus .panel-header .panel-title {
+	background: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+.bungkus .panel-header, .panel-body {
+    border-color: var(--border-color);
+}
+/* .panel-body {
+	border:0;
+} */
+.bungkus .panel-footer {
+	/* border:0; */
+    padding: .5rem 0 .5rem 37px;
+    background: var(--bs-gray-100);
+}
+.bungkus .datagrid-header-expander {width:16px !important}
+.bungkus .datagrid-header {
+    border-width:0;
+    border-style:solid;
+	box-shadow:0 1px 9px 1px #cacaca;
+    /* border-color: var(--bs-gray-dark); */
+}
+.bungkus .datagrid .datagrid-pager {
+    border-color: var(--border-color);
+}
+.datagrid-header .datagrid-cell-group,
+.datagrid-header {
+    font-size:12px;
+}
+
+.datagrid-header td {
+	background:#fff;
+}
+
+.datagrid-header-row datagrid-filter-row td {
+    padding-bottom: 5px;
+}
+
+.lines-bottom .datagrid-body td{
+	border-bottom:1px dotted transparent;
+}
+
+/*.bungkus {
+	background: var(--bs-gray-dark);
+    border:1px solid var(--bs-gray-dark);
+	overflow-x:auto
+}*/
+
+.modal-body .bungkus {
+	width: 100%;
+	min-width:auto;
+}
+.bungkus .panel {margin-bottom:0px;border: 1px solid var(--bs-light);}
+/* .bungkus td {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+} */
+.bungkus .panel.datagrid {
+	border:0px;
+    overflow: unset;
+	/* overflow-y: hidden;
+	overflow-x: auto; */
+}
+.bungkus .datagrid-wrap {
+	display:table;
+	border-collapse:collapse;
+}
+
+.bungkus .datagrid-view {
+	display:table;
+	border-collapse:collapse;
+}
+.bungkus .datagrid-view .datagrid-header {
+	background-color:transparent;
+    background:none;
+}
+
+/* .bungkus .datagrid-view .datagrid-header {
+	background:rgba(249, 249, 249, .7)
+} */
+
+.bungkus .datagrid-view1 .datagrid-body {
+	border-right: 0;
+	/* border-right: 1px solid #cacaca; */
+}
+.bungkus .datagrid-view .datagrid-header .datagrid-editable-input[disabled="disabled"] {
+	border-bottom:none;
+}
+.bungkus .datagrid-view .datagrid-header .datagrid-editable-input,
+.bungkus div[class|="datagrid-filter"] input.textbox-text {
+	font-size:11px;
+	border:0px;
+    border-bottom:1px solid #777;
+	background:transparent;
+    padding: 0;
+    background: var(--bs-gray-100);
+    text-indent: .5rem;
+}
+
+.bungkus .datagrid-header .datagrid-cell span {
+	font-family: var(--bs-font-condensed);
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.bungkus .datagrid-view .datagrid-header .datagrid-editable-input:focus {
+    background: var(--bs-gray-200);
+	
+}
+.bungkus td[field="_expander"] .datagrid-cell {
+    text-indent: 0;
+    padding: 0;
+	line-height: unset
+}
+.bungkus a.datagrid-filter-btn {
+	width:24px !important;
+	height:24px !important;
+}
+.bungkus div[class|="datagrid-filter"] span.textbox {
+	box-shadow:none;
+}
+
+/* di datagrid baris filter untuk sortir*/
+.bungkus div[class|="datagrid-filter"] .icon-filter {
+	background:none;
+	padding:3px 0 0 5px;
+	/* border-bottom:1px solid #777; */
+	color:#000;
+}
+
+.bungkus .datagrid-filter-c .textbox.numberbox {
+	background-color: transparent
+}
+
+.bungkus div[class|="datagrid-filter"] .icon-filter:hover {
+	text-decoration: none;
+}
+.bungkus div[class|="datagrid-filter"] .icon-filter:before {
+	font-family: bootstrap-icons;
+	content:"\f3e1";
+}
+.bungkus .datagrid-view .datagrid-header .datagrid-editable-input:focus,
+.bungkus div[class|="datagrid-filter"] input.textbox-text:focus {
+	border-bottom:1px solid var(--bs-primary); 
+}
+.bungkus td span.bx,
+.bungkus td i.bx {
+    font-size: 1rem;
+}
+.datagrid-row-selected {
+    background: unset;
+    color: var(--text-default);
+}
+/* .bungkus .panel-body {padding:0px} */
+/* , .form-control {font-size:inherit} */
+.panel{
+	border-collapse:collapse;
+    border:1px solid #ddd;
+    border-radius:0px
+}
+
+span.textbox {
+	border-radius: 3px;
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+}
+span.textbox:focus {
+	border-color: #66afe9;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.bungkus .textbox {
+	border-radius: 3px;
+    border: 0px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+/* .combo-arrow {
+    background-color: transparent;
+    background: url(../chosen/chosen-sprite.png) no-repeat 0 7px;
+}
+*/
+.combo-arrow:hover { background-color: transparent; }
+.combo-arrow:active { outline:transparent; }
+.bungkus .datagrid-header table td div[class^="datagrid-filter"] .textbox.combo input {
+	font-size:11px;
+}
+.bungkus a.combo-arrow {
+	background-color:transparent;
+	box-shadow:none;
+}
+.bungkus a.combo-arrow:focus {
+	outline:none;
+}
+.bungkus .datagrid-header table td div[class^="datagrid-filter"] .textbox.combo {
+	border:0;
+}
+.bungkus .datagrid-header table td div[class^="datagrid-filter"] .textbox.combo .textbox-addon {
+	background: white;
+}
+.bungkus .datagrid-header table td div[class^="datagrid-filter"] .textbox-focused {
+	box-shadow:none;
+}
+.bungkus datagrid-header-row datagrid-filter-row {
+    padding: 0 0 5px;
+}
+.bungkus .pagination-info { 
+	line-height:38px;
+    font-size: inherit;
+}
+.bungkus .datagrid-view1 table td:first-child {
+	border-left:0;
+}
+.bungkus .datagrid-header table.datagrid-htable tr:first-child td,
+.bungkus .datagrid-footer table.datagrid-ftable tr:first-child td,
+.bungkus .datagrid-body table.datagrid-btable tr:first-child td {
+	border-top:0;
+	border-left:0;
+}
+
+.bungkus .datagrid-header table.datagrid-htable tr td {
+	/* background: rgba(249, 249, 249, .7); */
+	background-color: transparent;
+}
+
+.bungkus .datagrid-body table.datagrid-btable .datagrid-pager.pagination table tr td {
+	border-right:0;
+}
+.bungkus .datagrid-header table.datagrid-htable tr:last-child td,
+.bungkus .datagrid-footer table.datagrid-ftable tr:last-child td,
+.bungkus .datagrid-body table.datagrid-btable tr:last-child td {
+	border-bottom:0;
+}
+.bungkus .datagrid-header table.datagrid-htable td,
+.bungkus .datagrid-body table.datagrid-btable td, 
+.bungkus .datagrid-footer table.datagrid-ftable td {
+	height:33px;
+	vertical-align:middle;
+	padding:0;
+}
+.bungkus tr.treegrid-tr-tree td {
+    height: unset !important;
+}
+
+.bungkus .datagrid-header td, 
+.bungkus .datagrid-body td, 
+.bungkus .datagrid-footer td {
+	border-style: solid;
+}
+.bungkus .datagrid-header td {
+	border-color: transparent;
+}
+.bungkus .datagrid-body td, 
+.bungkus .datagrid-footer td {
+    border-color: rgba(245, 245, 245, 0.5);
+	/* border-color: transparent; */
+}
+.bungkus .datagrid-body table.datagrid-btable tr td.datagrid-td-rownumber {
+	border-left:0 !important;
+	/* border-right: 1px solid #cacaca; */
+}
+.bungkus .datagrid-body table.datagrid-btable tr td {
+	border-left:none !important;
+}
+.bungkus .datagrid-body table.datagrid-btable tr td[field="_expander"] {
+	border-left:none !important;
+}
+.bungkus .datagrid-body table.datagrid-btable tr td:first-child[rowspan] {
+	border-left:none !important;
+}
+.bungkus .datagrid-header table.datagrid-htable, 
+.bungkus .datagrid-body table.datagrid-btable,
+.bungkus .datagrid-footer table.datagrid-ftable {
+	border:0px;
+	border-collapse:collapse;
+}
+.bungkus .datagrid-footer table.datagrid-ftable td {
+	font-weight: bolder;
+}
+.bungkus .datagrid-pager.pagination table td {
+	border:0;
+}
+.datagrid-view1 .datagrid-body-inner {
+    padding-bottom:0px;
+}
+.bungkus .datagrid-row-editing .datagrid-editable td {
+	border:0px !important;
+}
+.bungkus .datagrid-row-editing .datagrid-editable td span.textbox.combo {
+	height:33px !important;
+}
+.bungkus .datagrid-row-editing .datagrid-cell {
+    height: auto;
+}
+.bungkus .datagrid-row-editing .textbox-text {
+    text-indent: .5rem;
+}
+
+.bungkus .datagrid-header table tr td[rowspan] {
+	border-bottom:0;
+}
+.bungkus .datagrid-header table tr td[colspan]:nth-child(even) {
+	border-left:1px solid #cacaca !important;
+}
+.bungkus .datagrid-header table tr td[colspan] {
+	border-bottom:1px solid #cacaca;
+}
+.bungkus .datagrid-header table td input[type="checkbox"],
+.bungkus .datagrid-body table td input[type="checkbox"] {
+	margin:1px;
+}
+.bungkus .datagrid-header-row.datagrid-filter-row td {
+	padding:0 0 5px !important;
+}
+.bungkus .datagrid table td[colspan='4'],
+.bungkus .datagrid table td[colspan='6'] {
+    padding-left: 0px !important;
+}
+.bungkus .pagination td .pagination-btn-separator {
+	margin:3px 9px;
+}
+
+.bungkus .pagination td {
+	height:40px;
+	vertical-align:middle;
+}
+.bungkus .datagrid-row-editing {
+	height:33px !important;
+}
+.datagrid-cell, .datagrid-cell-group, .datagrid-header {
+    margin:0;
+    font-size:inherit;
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    /* text-indent: .3rem; */
+}
+.datagrid-cell {
+    font-family: 'Titillium Web', sans-serif;
+}
+.datagrid-row-detail .datagrid-pager.pagination tr td:first-child {
+	border-left:0 !important;
+}
+@media (max-width:767px){
+	.inner-container .panel.panel-default {overflow:unset} 
+	.inner-container .panel {overflow:unset}
+	.bungkus {overflow-x:auto;min-width:unset}
+	.bungkus .panel.datagrid {min-width:1100px}
+
+	.bungkus .pagination table tr td:nth-child(1) {display:none}
+	.bungkus .pagination table tr td:nth-child(2) {display:none}
+	.bungkus .pagination table tr td:nth-child(8) {display:none}
+	.pagination-info {float:left;margin:0 10px 0 10px}
+}
+.datagrid-header, .datagrid-td-rownumber {
+	background:none;
+}
+
+/* .bungkus td.datagrid-td-rownumber {
+	background-color:#f4f4f4;
+} */
+
+.bungkus .pagination-page-list, .pagination .pagination-num {
+    border-color: #cacaca;
+}
+
+/* div.panel.combo-p {
+	border:1px solid #66afe9;
+	margin:0px;
+} */
+.combo-p .combobox-item { 
+	line-height:30px;
+	cursor:pointer;
+	padding:0 5px 
+}
+.combo-p {
+	padding:0;
+}
+.combo-p .combo-panel {
+	padding:0;
+	border:0;
+}
+
+.combo-panel {
+	overflow: auto;
+}
+
+.panel .panel {
+	border: 0;
+}
+
+.panel.combo-p {
+	border-color: var(--color-primary);
+	border-top-left-radius: 0.375rem;
+	border-top-right-radius: 0.375rem;
+}
+
+.pagination-btn-separator {border:0px}
+
+.textbox-disabled, .textbox-label-disabled {
+	background-color: #eceef1;
+	opacity: unset;
+}

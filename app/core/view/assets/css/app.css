@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.toast-container {
+	position:fixed; 
+	z-index:1091;
+	width: 100vw;
+    flex-direction: column;
+    align-content: flex-end;
+	overflow: hidden;
+}
+
+i.bx {
+	vertical-align: middle;
+}

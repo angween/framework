@@ -1,13 +1,14 @@
-Options -Indexes
-RewriteEngine On
+# hidupkan 
+RewriteEngine on
 
-#deny access to thunder CLI file
-RewriteRule ^(thunder)$ index.php?url=$1 [L,QSA]
-RewriteRule ^(thunder/) index.php?url=$1 [L,QSA]
-
-#accept loading of actual files and directories
+# bukan file dan bukan direktori
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-#send everything else to the index page
-RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+# alihkan ke path
+RewriteRule ^(.*)$ index.php?path=$1 [NC,L,QSA]
+
+<filesMatch ".(htaccess|htpasswd|ini|phps|fla|psd|log|sh|sql)$">
+ Order Allow,Deny  
+ Deny from all 
+</filesMatch>

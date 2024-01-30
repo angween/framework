@@ -1,0 +1,13 @@
+{
+	"name": "angween/framework",
+	"description": "MVC",
+	"type": "library",
+	"autoload": {
+		"psr-4": {
+			"core\\": "app/core"
+		}
+	},
+	"require": {
+		"phpoffice/phpspreadsheet": "^1.28"
+	}
+}

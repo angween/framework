@@ -1,0 +1,247 @@
+### index
+POST http://localhost/playground/ HTTP/1.1
+
+### login dengan post html form 
+POST http://localhost/playground/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+username=superadmin
+&password=11111
+&csrf=1249c661ee4666316d0e7b175827bdadad7725aa98066506f370dc93fd3cf923
+
+
+### login dgn json post
+POST http://localhost/playground/login HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "member_id": "m240100001",
+    "password": "11111"
+}
+
+
+### logout
+POST http://localhost/playground/logout HTTP/1.1
+
+
+### 
+POST http://localhost/playground/spg/voucher/get HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "member_id": "M240100001"
+}
+
+
+### 
+POST http://localhost/playground/spg/member/getMember HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "memberId": "M240100001"
+}
+
+### 
+POST http://localhost/playground/view/download/daftar_voucher_2024-01-25.xlsx HTTP/1.1
+
+
+### tes buka gambar
+POST http://localhost/playground/view/images/member/M240100006.jpg
+
+
+
+
+
+
+### notif -
+POST http://localhost/rla/ HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{"username": "superadmin","email": "lazwardi@gmail.com"}
+
+
+
+### tarik SEMUA daftar absen
+POST http://45.45.44.201/iWsService HTTP/1.0
+Content-Type: text/xml
+Content-Length: 128
+
+<GetAttLog>
+<ArgComKey xsi:type="xsd:integer">0</ArgComKey>
+<Arg>
+<PIN xsi:type="xsd:integer">All</PIN>
+</Arg>
+</GetAttLog>
+
+
+
+### Cari daftar absen user tertentu berdasar PIN/userID
+POST http://45.45.44.201/iWsService HTTP/1.0
+Content-Type: text/xml
+Content-Length: 128
+
+<GetAttLog>
+<ArgComKey xsi:type="xsd:integer">0</ArgComKey>
+<Arg><PIN xsi:type="xsd:integer">8</PIN></Arg>
+<Arg><PIN xsi:type="xsd:integer">14</PIN></Arg>
+</GetAttLog>
+
+
+
+
+
+
+
+
+### get rest api
+GET http://localhost/rla/admin/gaji/view HTTP/1.1
+Content-Type: application/json
+
+[
+	1,2
+]
+
+###
+POST http://localhost/rla/karyawan/gaji/view HTTP/1.1
+Content-Type: application/json
+
+{
+    "product_id":"P839C1440"
+}
+
+### post rest api dgn method asal2an
+POST http://localhost/rla/assets/image HTTP/1.1
+Content-Type: application/json
+
+query=logo
+
+
+
+### post minta data
+POST http://localhost/rla/user/get HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+###
+POST http://app.tjahaja-baru.com/better/inc/api.php HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+rangka=MH3SG5620NK638434
+
+
+
+### cek menu/controler asal2an
+POST http://localhost/rla/user/w9rs9fasdj HTTP/1.1
+
+### tes PUT
+PUT http://localhost/rla/debug/put HTTP/1.1
+Content-Type: application/json
+
+["aa", "bb", {"cc":"1","dd":10000}]
+
+ 
+### tes DELETE
+DELETE http://localhost/playground/debug/delete HTTP/1.1
+
+["aa","bb",9,"dd"]
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST https://api.chat-api.com/instance422284/sendMessage?token=off_bVHcgMGuuUwdhfWXnprVbTAJAK
+Content-Type: application/json
+
+{
+  "phone": "6282118082114",
+  "body": "Tes kirim pesan dari API"
+}
+
+### respon kalau sukses terkirim
+{
+  "sent": true,
+  "message": "Sent to 6282118082114@c.us",
+  "description": "Message has been sent to the provider",
+  "id": "gBGHYoIRgIIRTwIJihtIx3ZL-FGA"
+}
+
+
+### respon kalau tidak terdaftar WA
+{
+  "sent": false,
+  "error": {
+    "message": "Recipient is not a valid WhatsApp user"
+  },
+  "body": "🛵🏍🔘💬🗨🤖🎛⚙📱💻🖥 Tes kirim"
+
+}
+
+###
+POST https://api.chat-api.com/instance434886/messages?token=off_qEkYX33795ARuvTqG38zxXYbAK
+
+
+# POST https://app.theta-mart.com/thetamart/webhook HTTP/1.1
+###
+POST https://app.tjahaja-baru.com/pooling/pages/webhook.php HTTP/1.1
+Content-Type: application/json
+
+{
+    "messages":[{
+        "id":"gBGHYoE2NEQ2fwIJU2PdHQQtAdWU",
+        "bodyy": "@info bpkb MH3SG3180JK031135",
+        "bodyz": "@info plat BA2179IYL",
+        "body": "@bantuan",
+        "bodyx": "tes 222 kirim pesan 🛵🏍🔘💬🗨🤖🎛⚙📱💻🖥.",
+        "self":0,
+        "type":"chat",
+        "author":"6282118082114@c.us",
+        "chatId":"6282118082114@c.us",
+        "fromMe":null,
+        "caption":null,
+        "chatName":"6282118082114",
+        "senderName":"Lazwardi",
+        "isForwarded":false,
+        "time":"1653462387",
+        "debug":1
+    }],
+    "instanceId":434886
+}
+
+
+###
+POST https://app.theta-mart.com/thetamart/webhook HTTP/1.1
+Content-Type: application/json
+
+{
+    "ack":[{
+        "id":"gBGHYoE2NEQ2fwIJU2PdHQQtAdWU",
+        "chatId":"6282118082114@c.us",
+        "status":"delivered",
+        "debug":1
+    }],
+    "instanceId":434886
+}
+
+###
+GET https://api.chat-api.com/instance434886/me?token=off_qEkYX33795ARuvTqG38zxXYbAK HTTP/1.1
+
+
+### Cek 
+GET https://api.chat-api.com/instance434886/statistic?token=off_qEkYX33795ARuvTqG38zxXYbAK&phone=6281222083332 HTTP/1.1

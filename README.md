@@ -1,7 +1,9 @@
-# framework
+# RLA
 
-This framework is created by @QuickProgramming from Youtube. All credits goes to him.
+Aplikasi internal RLA
 
-https://www.youtube.com/watch?v=kTwmeDD6Lns&list=PLY3j36HMSHNWTfbUYTbsRHlWXlzbIDMKZ
+Gunakan PHP 8.2^, .htaccess dan database silahkan diminta langsung ke RLAtech
 
-I just put it in here for playing around.
+## Core Team
+
+[Lazwardi](https://github.com/angween) | ...
