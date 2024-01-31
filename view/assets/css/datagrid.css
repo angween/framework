@@ -141,7 +141,7 @@ span.tagbox.textbox {
 	box-shadow: 0px 6px 7px -1px rgb(67 89 113 / 12%);
 	border-top-right-radius: 0.375rem;
 	border-radius: 0 0 0.375rem 0.375rem;
-	background-color: #fff;
+	background-color: var(--bs-panel-background);
 	/* padding: 1.5rem; */
 }
 #targetIsi .tabs-panels .panel {

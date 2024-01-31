@@ -49,7 +49,15 @@
 
   --bs-primary-text-emphasis: #f9f9f9;
   --bs-secondary-text-emphasis: #f9f9f9;
+
+  --bs-panel-background: #ffffff;
 }
+
+.nav-tabs {
+  --bs-nav-tabs-link-active-bg: var(--bs-panel-background);
+  --bs-nav-tabs-link-active-border-color: var(--bs-border-color) var(--bs-border-color) var(--bs-panel-background);
+}
+
 
 .btn-primary {
     --bs-btn-disabled-bg: var(--bs-gray-500);
