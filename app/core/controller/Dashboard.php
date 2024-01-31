@@ -11,7 +11,7 @@ class Dashboard {
 
 	public function index()
 	{
-		if ( ! App::view( PATH_FILE_VIEW . 'html/systems/dashboard.php' ) ) {
+		if ( ! App::view( PATH_FILE_VIEW . 'page/dashboard.php' ) ) {
 			Router::notFound('index');
 		}
 	}

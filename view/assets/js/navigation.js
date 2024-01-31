@@ -164,7 +164,7 @@ const Navigasi = (function () {
 		/** Muat JS ekstra */
 		let files = [
 			"view/assets/libs/dropzone6/dropzone-min.js",
-			// "view/assets/libs/easyui/old-datagrid-filter.js",
+			"view/assets/libs/easyui/old-datagrid-filter.js",
 			"view/assets/libs/easyui/datagrid-export.js",
 			"view/assets/libs/easyui/datagrid-detailview.js",
 			"view/assets/libs/easyui/datagrid-cellediting.js",

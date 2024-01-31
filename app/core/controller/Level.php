@@ -23,7 +23,7 @@ class Level {
 
 	public function viewLevel( $parameter = null ) 
 	{
-		if ( ! App::view( 'view/html/systems/level/level.php' ) ) {
+		if ( ! App::view( PATH_FILE_VIEW . 'page/level/level.php' ) ) {
 			Router::notFound('Halaman');
 		}
 	}

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="<?= URL_VIEW ?>assets/css/login.css<?= IN_DEVELOPMENT ?>" />
+<link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/css/login.css<?= IN_DEVELOPMENT ?>" />
 
 <style>
 .logo {
@@ -69,7 +69,7 @@
 </div>
 
 <!-- / Content -->
-<script src="<?= URL_VIEW ?>/assets/js/login.js<?= IN_DEVELOPMENT ?>"></script>
+<script src="<?= URL_PUBLIC_VIEW ?>/assets/js/login.js<?= IN_DEVELOPMENT ?>"></script>
 <?php if (isset($_COOKIE['rla_akunku']) && isset($_COOKIE['rla_passku'])) { ?>
 <script>
 	(function () {

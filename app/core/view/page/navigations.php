@@ -22,8 +22,7 @@ use core\controller\App;
 	<div class="menu-inner-shadow"></div>
 
 	<ul class="menu-inner py-1">
-
-	<?= App::myNavigations() ?>
+		<?= App::myNavigations() ?>
 	</ul>
 </aside>
 

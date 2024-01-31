@@ -22,13 +22,14 @@ $__LOCALHOST   = $_SERVER['SERVER_NAME'] === 'localhost' || $_SERVER['HTTP_HOST'
 define('APP_OWNER', 'core');
 define('IS_LOCALHOST', $__LOCALHOST);
 define('DS', DIRECTORY_SEPARATOR );
-define('CLASS_CORE', 'core\\controller');
-define('PATH_CORE', 'app' . DS . 'core' . DS );						           	        /** app/core/ */
-define('PATH_DIR', $__script_name);												        /** mvc */
-define('URL_ROOT', $__root . $__script_name); 									        /** http://localhost/mvc/ */
-define('URL_VIEW', $__root . $__script_name . 'view/' );     /** http://localhost/mvc/view/ */
-define('PATH_FILE', realpath($_SERVER['DOCUMENT_ROOT'] . DS . PATH_DIR . DS ));         /** C:\xampp\htdocs\mvc\ */
-define('PATH_FILE_VIEW',  'view\\' );                    /** C:\xampp\htdocs\mvc\view\ */
+define('CLASS_CORE', APP_OWNER . '\controller');
+define('PATH_CORE', 'app' . DS . APP_OWNER . DS );						                /** app/core/ */
+define('PATH_DIR', $__script_name);												        /** framework */
+define('URL_ROOT', $__root . $__script_name); 									        /** http://localhost/framework/ */
+define('URL_CORE_VIEW', $__root . $__script_name . 'app/core/view/' );                  /** http://localhost/framework/app/core/view/ */
+define('URL_PUBLIC_VIEW', $__root . $__script_name . 'view/' );                         /** http://localhost/framework/view/ */
+define('PATH_FILE', realpath($_SERVER['DOCUMENT_ROOT'] . DS . PATH_DIR . DS ));         /** C:\xampp\htdocs\framework\ */
+define('PATH_FILE_VIEW',  'app' .DS. 'core' .DS. 'view' .DS. '' );                      /** C:\xampp\htdocs\framework\app\core\view\ */
 define('ID_TIMELENGTH', 8 );													        /** Panjang timestamp yg dipakai oleh semua ID (product, vendor dll) */
 // define('SESSION_NAME', 'RLAawesomeSistem' );
 

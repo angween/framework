@@ -17,7 +17,7 @@
   class="light-style"
   dir="ltr"
   data-theme="theme-default"
-  data-assets-path="<?= URL_VIEW ?>assets/"
+  data-assets-path="<?= URL_PUBLIC_VIEW ?>assets/"
   data-template="vertical-menu-template-free"
 >
   <head>
@@ -32,23 +32,23 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="<?= URL_VIEW ?>assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="<?= URL_PUBLIC_VIEW ?>assets/img/favicon/favicon.ico" />
 
-	<!-- <link rel="stylesheet" href="<?= URL_VIEW ?>assets/libs/bootstrap/css/bootstrap.min.css" type="text/css" /> -->
-	<link rel="stylesheet" href="<?= URL_VIEW ?>assets/css/core.css" type="text/css" />
-	<link rel="stylesheet" href="<?= URL_VIEW ?>assets/css/theme-default.css" type="text/css" />
-	<link rel="stylesheet" href="<?= URL_VIEW ?>assets/libs/animate/animate.min.css" type="text/css" />
-	<link rel="stylesheet" href="<?= URL_VIEW ?>assets/libs/boxicons/css/boxicons.min.css" type="text/css" />
-	<link rel="stylesheet" href="<?= URL_VIEW ?>assets/libs/perfectscrollbar/perfectscrollbar.css" type="text/css" />
-	<link rel="stylesheet" href="<?= URL_VIEW ?>assets/css/app.css<?= IN_DEVELOPMENT ?>" type="text/css" />
+	<!-- <link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/libs/bootstrap/css/bootstrap.min.css" type="text/css" /> -->
+	<link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/css/core.css" type="text/css" />
+	<link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/css/theme-default.css" type="text/css" />
+	<link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/libs/animate/animate.min.css" type="text/css" />
+	<link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/libs/boxicons/css/boxicons.min.css" type="text/css" />
+	<link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/libs/perfectscrollbar/perfectscrollbar.css" type="text/css" />
+	<link rel="stylesheet" href="<?= URL_PUBLIC_VIEW ?>assets/css/app.css<?= IN_DEVELOPMENT ?>" type="text/css" />
 
 
-	<script src="<?= URL_VIEW ?>assets/js/helpers.js"></script>
-	<script src="<?= URL_VIEW ?>assets/js/config.js"></script>
+	<script src="<?= URL_PUBLIC_VIEW ?>assets/js/helpers.js"></script>
+	<script src="<?= URL_PUBLIC_VIEW ?>assets/js/config.js"></script>
 
-	<script src="<?= URL_VIEW ?>assets/libs/jquery/jquery-3.6.0.min.js"></script>
-	<script src="<?= URL_VIEW ?>assets/libs/bootstrap/js/bootstrap.min.js"></script>
-	<script src="<?= URL_VIEW ?>assets/js/app.js<?= IN_DEVELOPMENT ?>"></script>
+	<script src="<?= URL_PUBLIC_VIEW ?>assets/libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="<?= URL_PUBLIC_VIEW ?>assets/libs/bootstrap/js/bootstrap.min.js"></script>
+	<script src="<?= URL_PUBLIC_VIEW ?>assets/js/app.js<?= IN_DEVELOPMENT ?>"></script>
   </head>
 
   <body>
@@ -71,12 +71,12 @@
         <a href="index.php" class="btn btn-primary"> Kembali </a>
         <div class="mt-3">
           <img
-            src="<?= URL_VIEW ?>assets/images/404_light.png"
+            src="<?= URL_PUBLIC_VIEW ?>assets/images/404_light.png"
             alt="404"
             width="500"
             class="img-fluid"
-            data-app-dark-img="<?= URL_VIEW ?>assets/images/404_dark.png"
-            data-app-light-img="<?= URL_VIEW ?>assets/images/404_light.png"
+            data-app-dark-img="<?= URL_PUBLIC_VIEW ?>assets/images/404_dark.png"
+            data-app-light-img="<?= URL_PUBLIC_VIEW ?>assets/images/404_light.png"
           />
         </div>
       </div>
@@ -87,15 +87,15 @@
 
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
-	<script src="<?= URL_VIEW ?>assets/libs/perfectscrollbar/perfectscrollbar.js"></script>
+	<script src="<?= URL_PUBLIC_VIEW ?>assets/libs/perfectscrollbar/perfectscrollbar.js"></script>
 
-    <!-- <script src="<?= URL_VIEW ?>assets/vendor/js/menu.js"></script> -->
+    <!-- <script src="<?= URL_PUBLIC_VIEW ?>assets/vendor/js/menu.js"></script> -->
     <!-- endbuild -->
 
     <!-- Vendors JS -->
 
     <!-- Main JS -->
-    <script src="<?= URL_VIEW ?>assets/js/main.js"></script>
+    <script src="<?= URL_PUBLIC_VIEW ?>assets/js/main.js"></script>
 
     <!-- Page JS -->
 
