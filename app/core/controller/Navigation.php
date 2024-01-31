@@ -18,7 +18,7 @@ class Navigation {
 
 	public function index()
 	{
-		if ( ! App::view( 'view/html/systems/navigation/index.php' ) ) {
+		if ( ! App::view( PATH_CORE_VIEW . 'page/navigation/index.php' ) ) {
 			Router::notFound('index');
 		}
 	}
@@ -40,14 +40,14 @@ class Navigation {
 
 	public function viewNavigations( $parameter = null ) 
 	{
-		if ( ! App::view( 'view/html/systems/navigation/navigation.php' ) ) {
+		if ( ! App::view( PATH_CORE_VIEW . 'page/navigation/navigation.php' ) ) {
 			Router::notFound('Halaman');
 		}
 	}
 
 	public function viewAccess( $parameter = null ) 
 	{
-		if ( ! App::view( 'view/html/systems/navigation/access.php' ) ) {
+		if ( ! App::view( PATH_CORE_VIEW . 'page/navigation/access.php' ) ) {
 			Router::notFound('Halaman');
 		}
 	}

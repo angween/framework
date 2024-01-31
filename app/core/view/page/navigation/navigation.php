@@ -8,4 +8,4 @@ defined('APP_OWNER') or exit('No direct script access allowed');
 	</div>
 </div>
 
-<script src="view/html/systems/navigation/assets/navigation.js<?= IN_DEVELOPMENT ?>"></script>
+<script src="<?= PATH_CORE_VIEW ?>asset/js/navigation.js<?= IN_DEVELOPMENT ?>"></script>

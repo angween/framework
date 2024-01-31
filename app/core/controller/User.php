@@ -37,7 +37,7 @@ class User
 
 	public function index( $parameter = null )
 	{
-		if ( ! App::view( PATH_FILE_VIEW . 'page/user/index.php' ) ) {
+		if ( ! App::view( PATH_CORE_VIEW . 'page/user/index.php' ) ) {
 			Router::notFound('index');
 		}
 	}
@@ -113,7 +113,7 @@ class User
 
 	public function viewUser( $parameter = null ) 
 	{
-		if ( ! App::view( PATH_FILE_VIEW . 'page/user/user.php' ) ) {
+		if ( ! App::view( PATH_CORE_VIEW . 'page/user/user.php' ) ) {
 			Router::notFound('Halaman');
 		}
 	}

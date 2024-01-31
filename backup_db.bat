@@ -17,7 +17,8 @@ echo *** Silahkan masukan password MySQL/MariaDB nya untuk user root
 
 REM Using the obtained folder name as the database name
 REM "C:\wamp64\bin\mariadb\mariadb11.2.2\bin\mysqldump.exe" -u root -p %current_folder% > "C:\Users\ASUS\OneDrive\BackupDB\%current_folder%_%datetimef%"
-"C:\wamp64\bin\mariadb\mariadb11.2.2\bin\mysqldump.exe" -u root -p %current_folder% > "%current_folder%.sql"
+REM "C:\wamp64\bin\mariadb\mariadb11.2.2\bin\mysqldump.exe" -u root -p %current_folder% > "%current_folder%.sql"
+"C:\xampp\mysql\bin\mysqldump.exe" -u root -p %current_folder% > "%current_folder%.sql"
 
 echo *** Selesai, tekan sembarang tombol.
 pause > nul

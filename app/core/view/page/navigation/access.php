@@ -28,4 +28,4 @@ use core\controller as RLA;
 	</div>
 </div>
 
-<script src="view/html/systems/navigation/assets/access.js<?= IN_DEVELOPMENT ?>"></script>
+<script src="<?= PATH_CORE_VIEW ?>asset/js/access.js<?= IN_DEVELOPMENT ?>"></script>

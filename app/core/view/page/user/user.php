@@ -9,4 +9,4 @@ defined('APP_OWNER') or exit('No direct script access allowed');
 </div>
 
 
-<script src="<?= PATH_FILE_VIEW ?>asset/js/user.js<?= IN_DEVELOPMENT ?>"></script>
+<script src="<?= PATH_CORE_VIEW ?>asset/js/user.js<?= IN_DEVELOPMENT ?>"></script>

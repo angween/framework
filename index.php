@@ -104,9 +104,9 @@ use core\controller\App;
 <body>
 	<?php
 	if ( ! App::$loggedInUser ) {
-		include(PATH_FILE_VIEW . "page/login.php" );
+		include(PATH_CORE_VIEW . "page/login.php" );
 	} else {
-		include(PATH_FILE_VIEW . "page/container.php" );
+		include(PATH_CORE_VIEW . "page/container.php" );
 	}
 	?>
 

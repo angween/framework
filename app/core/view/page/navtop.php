@@ -209,7 +209,7 @@ $form_id = 'formEditBiodata';
 					})
 				},
 				badan: `
-					<?php require(PATH_FILE_VIEW . "page/user/profile.php"); ?>
+					<?php require(PATH_CORE_VIEW . "page/user/profile.php"); ?>
 				`,
 			})
 		})

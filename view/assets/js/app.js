@@ -702,7 +702,7 @@ class App {
 			return false;
 		}
 
-		new Toast({ id: 'modalTampil', title: 'Dialog', text: 'Menampilkan dialog...', timeOut: false, type: 'info' });
+		// new Toast({ id: 'modalTampil', title: 'Dialog', text: 'Menampilkan dialog...', timeOut: false, type: 'info' });
 
 		$(container).load(
 			'view/html/systems/modal.php',
@@ -712,6 +712,7 @@ class App {
 				centered: centered, borderFooter: borderFooter
 			},
 			function () {
+				/** On Show Modal */
 				$('#' + id).on('show.bs.modal', function (e) {
 					if (theme == 'default') {
 						$('#' + id + ' .modal-title').html(judul)
@@ -725,28 +726,27 @@ class App {
 					}
 				})
 
-				$('#' + id).modal('show')
-
+				/** On Shown Modal */
 				$('#' + id).on('shown.bs.modal', function (e) {
-
-				if (theme == 'default') new PerfectScrollbar($('.modal-body').get(0), { wheelPropagation: false })
-				
-				new Toast({ id: 'modalTampil', title: 'Dialog', timeOut: 2000, type: 'success' });
+					if (theme == 'default') new PerfectScrollbar($('.modal-body').get(0), { wheelPropagation: false })
 	
-				onShown();
-			})
+					onShown();
+				})
 	
+				/** On Hide Modal */
 				$('#' + id).on('hide.bs.modal', function (e) { onHide() })
-			$('#' + id).on('show.bs.modal', function (e) { onShow() })
-			$('#' + id).on('hidden.bs.modal', function (e) {
-				onHidden();
 
+				// $('#' + id).on('show.bs.modal', function (e) { onShow() })
 
-				if (removeOnHidden) {
-					console.log('removing modal DOM')
-					$(container).empty()
-				}
-			})
+				/** On Hidden Modal */
+				$('#' + id).on('hidden.bs.modal', function (e) {
+					onHidden();
+
+					if (removeOnHidden) $(container).empty()
+				})
+
+				/** Tampilkan Modal */
+				$('#' + id).modal('show')
 		})
 
 		/* Ada error sewaktu set perfectscrollbar pada tiap body modal */
@@ -805,7 +805,6 @@ class App {
 		type = type || 'info'
 		timeOut = timeOut === undefined ? 5000 : timeOut
 
-		console.log('new app.toast')
 		new Toast({
 			id: id,
 			text: text,
@@ -1117,7 +1116,6 @@ class Datagrid {
 	}
 
 	static onEndEdit = (index, row, changes) => {
-		console.log('on endedit', this.title, changes)
 		/* Ini mestinya di declare lagi oleh masing-masing table karena akan berbeda tiap2 table */
 	}
 

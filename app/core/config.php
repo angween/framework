@@ -29,7 +29,7 @@ define('URL_ROOT', $__root . $__script_name); 									        /** http://localh
 define('URL_CORE_VIEW', $__root . $__script_name . 'app/core/view/' );                  /** http://localhost/framework/app/core/view/ */
 define('URL_PUBLIC_VIEW', $__root . $__script_name . 'view/' );                         /** http://localhost/framework/view/ */
 define('PATH_FILE', realpath($_SERVER['DOCUMENT_ROOT'] . DS . PATH_DIR . DS ));         /** C:\xampp\htdocs\framework\ */
-define('PATH_FILE_VIEW',  'app' .DS. 'core' .DS. 'view' .DS. '' );                      /** C:\xampp\htdocs\framework\app\core\view\ */
+define('PATH_CORE_VIEW',  'app' .DS. 'core' .DS. 'view' .DS. '' );                      /** C:\xampp\htdocs\framework\app\core\view\ */
 define('ID_TIMELENGTH', 8 );													        /** Panjang timestamp yg dipakai oleh semua ID (product, vendor dll) */
 // define('SESSION_NAME', 'RLAawesomeSistem' );
 

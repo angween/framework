@@ -17,11 +17,11 @@ defined('APP_OWNER') or exit('No direct script access allowed');
 <div class="layout-wrapper layout-content-navbar">
 	<div class="layout-container">
 
-		<?php include(PATH_FILE_VIEW . "page/navigations.php" ); ?>
+		<?php include(PATH_CORE_VIEW . "page/navigations.php" ); ?>
 
 		<div class="layout-page">
 
-			<?php include(PATH_FILE_VIEW . "page/navtop.php"); ?>
+			<?php include(PATH_CORE_VIEW . "page/navtop.php"); ?>
 
 			<div class="content-wrapper pt-4 mb-3">
 				<div id="targetIsi" class="container-xxl flex-grow-1 container-p-y">
